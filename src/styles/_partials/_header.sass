@@ -1,10 +1,58 @@
 header
+	background-color: #FFFFFF
 	.navbar
-		+pad(null 0)
-	.navbar-brand
-		img 
-			max-height: 1rem
-	+media-breakpoint-up(md)
+		padding: 0
+		min-height: 5rem
 		.navbar-brand
 			img 
 				max-height: 2rem
+		.navbar-collapse
+			ul.navbar-nav
+				li.nav-item
+					padding: .5rem 0 .5rem 0
+					a.nav-link
+						text-decoration: none
+						font-size: 1.125rem
+						font-weight: 400
+						color: #000000
+						transition: .3s ease-in-out
+						&:hover, &:active
+							color: #ff6700
+							transition: .3s ease-in-out
+	ul.navbar-tools
+		font-size: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		li
+			border-radius: 50%
+			padding: .5rem 0 .5rem 0
+			a.btn
+				padding: 0
+				font-size: 1.125rem
+				display: flex
+				justify-content: center
+				align-items: center
+				i
+					color: #cccccc
+					transition: .3s ease-in-out
+				&:hover, &:active
+					i
+						color: #ff6700
+						transition: .3s ease-in-out
+				img
+					width: 1.5rem
+					height: 1.5rem
+					border-radius: 50%
+	+media-breakpoint-up(md)
+		.navbar
+			.navbar-brand
+				img 
+					max-height: 3rem
+			.navbar-collapse
+				justify-content: center
+				ul.navbar-nav
+					li.nav-item
+						padding: .5rem 1rem .5rem 1rem
+		ul.navbar-tools
+			height: 100%
