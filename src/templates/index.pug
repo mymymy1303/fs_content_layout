@@ -6,6 +6,7 @@ block variables
 	- var bodyclass = 'home'
 
 block body
+	// -------------------------BANNER-------------------------
 	section.home-banner
 		.owl-carousel.owl-theme#homeBanner
 			.banner-item.flex.flex--align-center.flex--justify-center.background--center
@@ -36,4 +37,100 @@ block body
 								br.responsive-break
 								| content
 
+
+	// -------------------------SERVICES-------------------------
+	section.home-services.flex.flex--align-center.flex--justify-center
+		.services-xl
+			.services-item.services-item--7f4c26.flex.flex--align-center.flex--justify-center.text-center
+				figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+					img(src="./img/01_home/home_services_icon_1.png", alt="")
+					figcaption
+						p.text--no-margin.mt-3 Bài Fanpage Social
+			.services-item.services-item--bb5e30.flex.flex--align-center.flex--justify-center.text-center
+				figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+					img(src="./img/01_home/home_services_icon_2.png", alt="")
+					figcaption
+						p.text--no-margin.mt-3 Bài viết chuẩn SEO
+			.services-item.services-item--db9a45.flex.flex--align-center.flex--justify-center.text-center
+				figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+					img(src="./img/01_home/home_services_icon_3.png", alt="")
+					figcaption
+						p.text--no-margin.mt-3 Bài viết Facebook ads, quảng cáo sản phẩm
+			.services-item.services-item--bea05d.flex.flex--align-center.flex--justify-center.text-center
+				figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+					img(src="./img/01_home/home_services_icon_4.png", alt="")
+					figcaption
+						p.text--no-margin.mt-3 Bài báo, quảng bá sản phẩm, PR thương hiệu
+			.services-item.services-item--64909b.flex.flex--align-center.flex--justify-center.text-center
+				figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+					img(src="./img/01_home/home_services_icon_5.png", alt="")
+					figcaption
+						p.text--no-margin.mt-3 Landing page bán hàng trực tuyến
+			.services-item.services-item--68802d.flex.flex--align-center.flex--justify-center.text-center
+				figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+					img(src="./img/01_home/home_services_icon_6.png", alt="")
+					figcaption
+						p.text--no-margin.mt-3 Bài PR đăng website
+		.container
+			.row
+				.col
+					h2.text--700.text-center.headers--no-margin Lý do chọn
+			.row.mt-5.mt-xl-0.home-services-wrapper
+				.col
+					.owl-carousel.owl-theme#homeServices
+						.services-item.services-item--7f4c26.flex.flex--align-center.flex--justify-center.text-center
+							figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+								img(src="./img/01_home/home_services_icon_1.png", alt="")
+								figcaption
+									p.text--no-margin.mt-3 Bài Fanpage Social
+						.services-item.services-item--bb5e30.flex.flex--align-center.flex--justify-center.text-center
+							figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+								img(src="./img/01_home/home_services_icon_2.png", alt="")
+								figcaption
+									p.text--no-margin.mt-3 Bài viết chuẩn SEO
+						.services-item.services-item--db9a45.flex.flex--align-center.flex--justify-center.text-center
+							figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+								img(src="./img/01_home/home_services_icon_3.png", alt="")
+								figcaption
+									p.text--no-margin.mt-3 Bài viết Facebook ads, quảng cáo sản phẩm
+						.services-item.services-item--bea05d.flex.flex--align-center.flex--justify-center.text-center
+							figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+								img(src="./img/01_home/home_services_icon_4.png", alt="")
+								figcaption
+									p.text--no-margin.mt-3 Bài báo, quảng bá sản phẩm, PR thương hiệu
+						.services-item.services-item--64909b.flex.flex--align-center.flex--justify-center.text-center
+							figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+								img(src="./img/01_home/home_services_icon_5.png", alt="")
+								figcaption
+									p.text--no-margin.mt-3 Landing page bán hàng trực tuyến
+						.services-item.services-item--68802d.flex.flex--align-center.flex--justify-center.text-center
+							figure.flex.flex--align-center.flex--justify-center.flex--direction-column
+								img(src="./img/01_home/home_services_icon_6.png", alt="")
+								figcaption
+									p.text--no-margin.mt-3 Bài PR đăng website
+			.row.mt-5.mt-md-4
+				.col-12.col-md-4
+					figure
+						.services-block-img.flex.flex--align-center.flex--justify-center
+							img(src="./img/_global/block_bg_1.png", alt="")
+							img.services-block-icon(src="./img/01_home/home_reasons_block_icon_1.png", alt="")
+						figcaption.text-center
+							h3.headers--no-margin.text--700.mt-3.mt-md-4.mb-2.px-2 Bài viết mới 100%
+							p.text--no-margin.text--400.mb-5.mt-md-0.px-3.px-sm-5.px-md-3 Thường xuyên cập nhật nội dung mới cho website là cách hiệu quả và bền vững nhất để nâng cao thứ hạng từ khóa.
+				.col-12.col-md-4
+					figure
+						.services-block-img.flex.flex--align-center.flex--justify-center
+							img.transform--rotate-90(src="./img/_global/block_bg_1.png", alt="")
+							img.services-block-icon(src="./img/01_home/home_reasons_block_icon_2.png", alt="")
+						figcaption.text-center
+							h3.headers--no-margin.text--700.mt-3.mt-md-4.mb-2.px-2 Tối ưu từ khóa theo chuẩn SEO
+							p.text--no-margin.text--400.mb-5.mt-md-0.px-3.px-sm-5.px-md-3 Thường xuyên cập nhật nội dung mới cho website là cách hiệu quả và bền vững nhất để nâng cao thứ hạng từ khóa.
+				.col-12.col-md-4
+					figure
+						.services-block-img.flex.flex--align-center.flex--justify-center
+							img.transform--rotate-180(src="./img/_global/block_bg_1.png", alt="")
+							img.services-block-icon.ml-2(src="./img/01_home/home_reasons_block_icon_3.png", alt="")
+						figcaption.text-center
+							h3.headers--no-margin.text--700.mt-3.mt-md-4.mb-2.px-2 Chất lượng bài viết mang lại giá trị thật sự
+							p.text--no-margin.text--400.px-3.px-sm-5.px-md-3 Thường xuyên cập nhật nội dung mới cho website là cách hiệu quả và bền vững nhất để nâng cao thứ hạng từ khóa.
 
