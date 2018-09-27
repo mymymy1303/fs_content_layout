@@ -21,59 +21,72 @@ footer
 
 	.footer-register
 		background: #ff6d00
-		h6
-			color: #fff
-			font-size: 1rem
-			font-weight: lighter
-		p
-			color: #fff
-			font-size: 0.75rem
-			font-weight: lighter
-			margin: 0
-		input
-			background: #ff6d00
-			border-radius: 0
-			border: white 1px solid
-			color: #fff
-			outline: none
-			&::placeholder
+		.register
+			min-height: 6rem
+			h6
 				color: #fff
-				font-size: 0.8125rem
+				font-size: 1rem
 				font-weight: lighter
-			&:focus
-				background: #ff6d00
+			p
 				color: #fff
-
-		button
-			position: absolute
-			background: #ff6d00
-			padding-left: 1rem
-			border: none
-			border-left: white 1px solid
-			color: white
-			font-size: 0.8125rem
-			cursor: pointer
-			top: 50%
-			transform: translateY(-50%)
-			right: 10px
-			z-index: 1030px
-		ul
-			li
-				width: 2rem
-				height: 2rem
-				border-radius: 50%
-				border: #fff solid 1px
+				font-size: 0.75rem
+				font-weight: lighter
+				margin: 0
+			input
 				background: #ff6d00
-				text-align: center
-				a
-					display: block
-					line-height: 1.8rem
-					i
-						color: transparent
-						-webkit-text-stroke-width: 0.4px
-						-webkit-text-stroke-color: white
+				border-radius: 0
+				border: white 1px solid
+				color: #fff
+				outline: none
+				padding-right: 5.85rem
+				&::placeholder
+					color: #fff
+					font-size: 0.8125rem
+					font-weight: lighter
+				&:focus
+					background: #ff6d00
+					color: #fff
+			button
+				position: absolute
+				background: #ff6d00
+				padding-left: 1rem
+				border: none
+				border-left: white 1px solid
+				color: white
+				font-size: 0.8125rem
+				cursor: pointer
+				top: 50%
+				transform: translateY(-50%)
+				right: 10px
+				z-index: 1030
+			ul
+				li
+					width: 2rem
+					height: 2rem
+					border-radius: 50%
+					border: #fff solid 1px
+					background: #ff6d00
+					text-align: center
+					a
+						display: block
+						line-height: 1.8rem
+						i
+							color: transparent
+							-webkit-text-stroke-width: 0.4px
+							-webkit-text-stroke-color: white
 
-
+	.footer-copyright
+		background: #212121
+		font-size: 0.8125rem
+		color: #808080
+		.copyright
+			min-height: 3rem
+			ul
+				line-height: 3rem
+				margin: 0
+			p
+				line-height: 3rem
+				margin: 0
 	+media-breakpoint-up(xs)
 		ul
 			li
