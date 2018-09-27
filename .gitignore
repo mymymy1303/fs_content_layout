@@ -98,3 +98,4 @@ UserInterfaceState.xcuserstate
 .vscode/launch.json
 dist/css/main.css
 dist/css/main.css.map
+*.css
