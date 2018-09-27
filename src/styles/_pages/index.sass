@@ -81,6 +81,8 @@ body
 			p
 				font-size: .9rem
 				line-height: 1.4rem
+	a
+		text-decoration: none
 	.owl-carousel.owl-theme
 		.owl-dots
 			display: flex
@@ -127,6 +129,7 @@ body
 		&--68802d
 			background-color: #68802d
 	+media-breakpoint-up(xl)
+		//LARGE DESKTOP: 1200px and up
 		padding-top: 13rem
 		.owl-carousel.owl-theme
 			display: none
@@ -157,3 +160,22 @@ body
 // /////////////////HOME-INTRO//////////////////////
 .home-intro
 	+section(30rem, #ffffff)
+	padding: 3rem 0 3rem 0
+	background-image: url('./../../img/01_home/home_intro_bg.png')
+	h2, h3
+		font-size: 1.875rem
+	a.btn
+		padding: 0
+		width: 8rem
+		height: 2.5rem
+		background-color: #ff6d00
+		border-radius: 1.25rem
+		border: 0
+		outline: none
+		color: #FFFFFF
+		&:hover
+			background-color: darken(#ff6d00, 15%)
+	+media-breakpoint-up(lg)
+		// TABLETS 768-992px
+		padding-bottom: 8rem
+		background-image: url('./../../img/01_home/home_intro_full.png')
