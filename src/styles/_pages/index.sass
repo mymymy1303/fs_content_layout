@@ -1,3 +1,84 @@
 body
-	font-family: Roboto
 	font-family: 'Encode Sans', sans-serif
+
+// /////////////////HOME-BANNER//////////////////////
+.home-banner
+	min-height: 30rem
+	width: 100%
+	margin: 0
+	padding: 0
+	background-color: pink
+	position: relative
+	.owl-carousel.owl-theme
+		.banner-item
+			min-height: 30rem
+			background-image: url('./../../img/01_home/home_banner_1_bg.png')
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+			display: flex
+			justify-content: center
+			align-items: center
+			.banner-item-content
+				margin: 0 2rem 0 2rem
+				text-align: center
+				padding: 2rem 1rem
+				box-shadow: 0 0 0 .7rem rgba(255,255,255,.5)
+				h1
+					color: #ffffff
+					font-weight: 300
+					margin: 0
+				p
+					color: #ffffff
+					margin: 0
+					font-weight: 200
+					font-size: 1.125rem
+					strong
+						font-weight: 700
+				p.motion-blur
+					color: #ff6d00
+					text-shadow: -5px 0 5px #ff6d00
+		.banner-item.banner-2
+			background-image: url('./../../img/01_home/home_banner_2_full.png')
+			background-position: center center
+			.banner-item-content
+				background-color: rgba(0,0,0,.7)
+				padding: 2rem 4rem
+		.banner-item.banner-3
+			background-image: url('./../../img/01_home/home_banner_3_full.png')
+			background-position: center center
+			.banner-item-content
+				background-color: rgba(0,0,0,.7)
+				padding: 2rem 4rem
+	.owl-dots
+		position: absolute
+		bottom: 2rem
+		left: 50%
+		transform: translateX(-50%)
+		.owl-dot
+			width: .625rem
+			height: .625rem
+			border-radius: 50%
+			background: #8b949d
+			outline: none
+			margin: 0 .3125rem 0 .3125rem
+		.owl-dot.active
+			background: #ff6d00
+	+media-breakpoint-up(sm)
+		//LANDSCAPE PHONES - 576px to 768px
+		.owl-carousel.owl-theme
+			.banner-item
+				background-image: url('./../../img/01_home/home_banner_1_full.png')
+				.banner-item-content
+					margin-top: -1.5rem
+					box-shadow: initial
+					h1
+						letter-spacing: .5rem
+					p
+						letter-spacing: .1rem
+			.banner-item.banner-2,.banner-item.banner-3
+				.banner-item-content
+					background: transparent
+					text-align: left
+					p
+						letter-spacing: .2rem
