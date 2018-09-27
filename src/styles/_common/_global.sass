@@ -1,15 +1,67 @@
-
 html, body
 	font-family: 'Encode Sans', sans-serif
-	font-size: 14px
+	font-size: 1rem
 	height: 100%
 	width: 100%
 
-.list-nomargin
+//LIST
+.list--no-margin
 	margin: 0
 	padding: 0
+	font-size: 0
 
+
+//TYPOGRAPHY
 .responsive-break
 	display: none
 	+media-breakpoint-up(lg)
 		display: block
+
+.text
+	&--100
+		font-weight: 100
+	&--200
+		font-weight: 200
+	&--300
+		font-weight: 300
+	&--400
+		font-weight: 400
+	&--500
+		font-weight: 500
+	&--600
+		font-weight: 600
+	&--700
+		font-weight: 700
+	&--800
+		font-weight: 800
+	&--900
+		font-weight: 900
+	&--no-margin
+		margin: 0
+
+.headers
+	&--no-margin
+		margin: 0
+
+//LAYOUT
+=section($section_min_height: 30rem, $section_bg: #ffffff)
+	min-height: $section_min_height
+	width: 100%
+	margin: 0
+	padding: 0
+	background-color: $section_bg
+	position: relative
+
+.flex
+	display: flex
+	&--align-center
+		align-items: center
+	&--justify-center
+		justify-content: center
+
+//BACKGROUND
+.background
+	&--center
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
