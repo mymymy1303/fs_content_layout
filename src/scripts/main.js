@@ -29,4 +29,11 @@ $(document).ready(function () {
 			}
 		}
 	});
+
+	$('#homeFeedback').owlCarousel({
+		items:1,
+		loop:true,
+		margin:10,
+		dots: true
+	});
 })

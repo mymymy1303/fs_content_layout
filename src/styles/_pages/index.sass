@@ -81,6 +81,8 @@ body
 			p
 				font-size: .9rem
 				line-height: 1.4rem
+	a
+		text-decoration: none
 	.owl-carousel.owl-theme
 		.owl-dots
 			display: flex
@@ -127,6 +129,7 @@ body
 		&--68802d
 			background-color: #68802d
 	+media-breakpoint-up(xl)
+		//LARGE DESKTOP: 1200px and up
 		padding-top: 13rem
 		.owl-carousel.owl-theme
 			display: none
@@ -153,3 +156,83 @@ body
 				top: 0
 				border-radius: 1px 1px 0 0
 				box-shadow: 0 0 0 .8rem #FFFFFF
+
+// /////////////////HOME-INTRO//////////////////////
+.home-intro
+	+section(30rem, #ffffff)
+	padding: 3rem 0 3rem 0
+	background-image: url('./../../img/01_home/home_intro_bg.png')
+	h2, h3
+		font-size: 1.875rem
+	a.btn
+		padding: 0
+		width: 8rem
+		height: 2.5rem
+		background-color: #ff6d00
+		border-radius: 1.25rem
+		border: 0
+		outline: none
+		color: #FFFFFF
+		&:hover
+			background-color: darken(#ff6d00, 15%)
+	+media-breakpoint-up(lg)
+		// DESKTOP, 992px and up
+		padding-bottom: 8rem
+		background-image: url('./../../img/01_home/home_intro_full.png')
+
+// /////////////////HOME-FEEDBACK//////////////////////
+.home-feedback
+	+section(30rem, #ffffff)
+	padding: 3rem 0 3rem 0
+	background-image: url('./../../img/01_home/home_feedback_bg.png')	
+	.home-feedback-side
+		display: none
+	h2
+		font-size: 1.875rem
+	figure
+		margin: 0
+		img
+			width: 2.5rem
+			height: 3.75rem
+	.owl-carousel.owl-theme
+		.owl-dots
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 1.5rem
+			.owl-dot
+				width: .625rem
+				height: .625rem
+				border-radius: 50%
+				background: #8b949d
+				outline: none
+				margin: 0 .3125rem 0 .3125rem
+			.owl-dot.active
+				background: #ff6d00
+		.home-feedback-item
+			.feedback-content
+				font-size: 1.5rem
+			.feedback-client
+				font-size: 1rem
+				color: #8f99a4
+	+media-breakpoint-up(lg)
+		// DESKTOP, 992px-1200px
+		padding-bottom: 5.5rem
+		.home-feedback-side
+			display: initial
+			position: absolute
+			right: 0
+			bottom: -5rem
+			width: 30rem
+			height: 28rem
+		.owl-carousel.owl-theme
+			width: 50%
+			margin-left: 25%
+			.owl-dots
+				margin-top: 3.75rem
+	+media-breakpoint-up(xl)
+		// DESKTOP, 1200px and up
+		.home-feedback-side
+			width: 38rem
+			height: 36rem
+			bottom: -6.5rem
