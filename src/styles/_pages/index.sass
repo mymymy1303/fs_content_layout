@@ -32,7 +32,7 @@ body
 				padding: 2rem 4rem
 	.owl-dots
 		position: absolute
-		bottom: 2rem
+		bottom: 4rem
 		left: 50%
 		transform: translateX(-50%)
 		.owl-dot
@@ -62,3 +62,94 @@ body
 					text-align: left
 					p
 						letter-spacing: .2rem
+
+// /////////////////HOME-SERVICES//////////////////////
+.home-services
+	+section(30rem, #ffffff)
+	padding: 3rem 0
+	background-image: url('./../../img/_global/background_1.png')
+	h2
+		font-size: 1.875rem
+	h3
+		font-size: 1.125rem
+	figure
+		margin: 0
+		.services-block-img
+			.services-block-icon
+				position: absolute
+		figcaption
+			p
+				font-size: .9rem
+				line-height: 1.4rem
+	.owl-carousel.owl-theme
+		.owl-dots
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 1.5rem
+			.owl-dot
+				width: .625rem
+				height: .625rem
+				border-radius: 50%
+				background: #8b949d
+				outline: none
+				margin: 0 .3125rem 0 .3125rem
+			.owl-dot.active
+				background: #ff6d00
+		.owl-item
+			display: flex
+			justify-content: center
+			align-items: center
+	.services-xl
+		display: none
+	.services-item
+		width: 11rem
+		height: 11rem
+		border-radius: .3125rem
+		box-shadow: .25rem .3125rem 0px 0px rgba(0, 0, 0, 0.15)
+		figure
+			img
+				width: 4.375rem
+				height: 4.375rem
+			figcaption
+				p
+					color: #ffffff
+		&--7f4c26
+			background-color: #7f4c26
+		&--bb5e30
+			background-color: #bb5e30
+		&--db9a45
+			background-color: #db9a45
+		&--bea05d
+			background-color: #bea05d
+		&--64909b
+			background-color: #64909b
+		&--68802d
+			background-color: #68802d
+	+media-breakpoint-up(xl)
+		padding-top: 13rem
+		.owl-carousel.owl-theme
+			display: none
+		.services-xl
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			top: -2rem
+			.services-item
+				margin: 0 .25rem
+				z-index: 2
+				&:first-child
+					margin-left: 0
+				&:last-child
+					margin-right: 0
+			&:before
+				content: ''
+				position: absolute
+				z-index: 1
+				height: 50%
+				width: 100%
+				background-color: #fff
+				top: 0
+				border-radius: 1px 1px 0 0
+				box-shadow: 0 0 0 .8rem #FFFFFF
