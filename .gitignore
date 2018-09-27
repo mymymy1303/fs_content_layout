@@ -84,7 +84,6 @@ dist/**
 /dist/img
 /dist/fonts
 /dist/favicon
-
 # IDE #
 .idea/
 *.swp
