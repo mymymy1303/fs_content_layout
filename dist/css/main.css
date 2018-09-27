@@ -6444,64 +6444,86 @@ footer {
       color: #666666; }
   footer .footer-register {
     background: #ff6d00; }
-    footer .footer-register h6 {
-      color: #fff;
-      font-size: 1rem;
-      font-weight: lighter; }
-    footer .footer-register p {
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: lighter;
-      margin: 0; }
-    footer .footer-register input {
-      background: #ff6d00;
-      border-radius: 0;
-      border: white 1px solid;
-      color: #fff;
-      outline: none; }
-      footer .footer-register input::placeholder {
+    footer .footer-register .register {
+      min-height: 6rem; }
+      footer .footer-register .register h6 {
         color: #fff;
-        font-size: 0.8125rem;
+        font-size: 1rem;
         font-weight: lighter; }
-      footer .footer-register input:focus {
+      footer .footer-register .register p {
+        color: #fff;
+        font-size: 0.75rem;
+        font-weight: lighter;
+        margin: 0; }
+      footer .footer-register .register input {
         background: #ff6d00;
-        color: #fff; }
-    footer .footer-register button {
-      position: absolute;
-      background: #ff6d00;
-      padding-left: 1rem;
-      border: none;
-      border-left: white 1px solid;
-      color: white;
-      font-size: 0.8125rem;
-      cursor: pointer;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 10px;
-      z-index: 1030px; }
-    footer .footer-register ul li {
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      border: #fff solid 1px;
-      background: #ff6d00;
-      text-align: center; }
-      footer .footer-register ul li a {
-        display: block;
-        line-height: 1.8rem; }
-        footer .footer-register ul li a i {
-          color: transparent;
-          -webkit-text-stroke-width: 0.4px;
-          -webkit-text-stroke-color: white; }
+        border-radius: 0;
+        border: white 1px solid;
+        color: #fff;
+        outline: none;
+        padding-right: 5.85rem; }
+        footer .footer-register .register input::placeholder {
+          color: #fff;
+          font-size: 0.8125rem;
+          font-weight: lighter; }
+        footer .footer-register .register input:focus {
+          background: #ff6d00;
+          color: #fff; }
+      footer .footer-register .register button {
+        position: absolute;
+        background: #ff6d00;
+        padding-left: 1rem;
+        border: none;
+        border-left: white 1px solid;
+        color: white;
+        font-size: 0.8125rem;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        z-index: 1030; }
+      footer .footer-register .register ul li {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: #fff solid 1px;
+        background: #ff6d00;
+        text-align: center; }
+        footer .footer-register .register ul li a {
+          display: block; }
+          footer .footer-register .register ul li a i {
+            color: transparent;
+            -webkit-text-stroke-width: 0.4px;
+            -webkit-text-stroke-color: white; }
+  footer .footer-copyright {
+    background: #212121;
+    color: #808080; }
+    footer .footer-copyright .copyright {
+      min-height: 3rem; }
+      footer .footer-copyright .copyright ul {
+        line-height: 3rem;
+        margin: 0; }
+        footer .footer-copyright .copyright ul li a {
+          font-size: 0.8125rem; }
+      footer .footer-copyright .copyright p {
+        line-height: 3rem;
+        margin: 0;
+        font-size: 0.8125rem; }
+  footer .footer-register ul li a {
+    line-height: 1.8rem; }
+  footer .footer-copyright .copyright p {
+    line-height: 4rem; }
   footer ul li {
-    padding: 0.5rem 0; }
+    line-height: 2rem; }
   footer .footer-register ul li a {
     line-height: 0.5rem; }
   @media (min-width: 1200px) {
     footer ul li {
-      padding: 0; }
+      line-height: 1.225rem; }
     footer .footer-register ul li a {
-      line-height: 1.8rem; } }
+      line-height: 1.8rem; }
+    footer .footer-copyright .copyright p {
+      line-height: 3rem; } }
 
 body {
   font-family: 'Encode Sans', sans-serif; }
@@ -6567,5 +6589,38 @@ body {
       text-align: left; }
       .home-banner .owl-carousel.owl-theme .banner-item.banner-2 .banner-item-content p, .home-banner .owl-carousel.owl-theme .banner-item.banner-3 .banner-item-content p {
         letter-spacing: .2rem; } }
+
+.service-wrapper {
+  min-height: 59.75rem; }
+  .service-wrapper h4 {
+    font-weight: bold;
+    font-size: 1.875rem; }
+  .service-wrapper .service-items img {
+    position: relative;
+    box-shadow: 3px 3px 0px 0px #d9d9d9;
+    border-radius: 0.3125rem; }
+  .service-wrapper .service-items span {
+    position: absolute;
+    color: #fff;
+    bottom: 8%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 1.25rem;
+    font-weight: normal;
+    min-width: 200px; }
+
+.services-detail-wrapper {
+  min-height: 124.625rem; }
+  .services-detail-wrapper .media-body {
+    padding-right: 1.2rem; }
+    .services-detail-wrapper .media-body .services-detail-content h4 {
+      font-weight: bold;
+      color: #333333;
+      font-size: 1.875rem; }
+    .services-detail-wrapper .media-body .services-detail-content h6 {
+      font-weight: 600;
+      font-size: 0.9375rem; }
+    .services-detail-wrapper .media-body .services-detail-content p {
+      font-size: 0.9375rem; }
 
 /*# sourceMappingURL=main.css.map */
