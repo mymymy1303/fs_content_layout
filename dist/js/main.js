@@ -31,6 +31,12 @@ $(function () {
         $('select.form-control').removeClass('form-control').css('width', '100%');
     }
 });
-// Main
-console.log('FullStack Vietnam!');
+$(document).ready(function () {
+    $('#homeBanner').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 0,
+        dots: true
+    });
+});
 //# sourceMappingURL=main.js.map
