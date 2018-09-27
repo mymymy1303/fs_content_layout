@@ -79,6 +79,7 @@ dist/**.*
 dist/*/**.*
 dist/**
 /dist/
+/dist/js
 
 # IDE #
 .idea/
