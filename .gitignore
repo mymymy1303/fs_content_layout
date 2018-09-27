@@ -80,6 +80,10 @@ dist/*/**.*
 dist/**
 /dist/
 /dist/js
+/dist/css
+/dist/img
+/dist/fonts
+/dist/favicon
 
 # IDE #
 .idea/
