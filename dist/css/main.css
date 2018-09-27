@@ -6327,7 +6327,7 @@ html, body {
     width: auto; } }
 
 header {
-  background-color: #000; }
+  background-color: #fff; }
   header .navbar {
     padding: 0;
     min-height: 5rem; }
@@ -6378,8 +6378,85 @@ header {
     header ul.navbar-tools {
       height: 100%; } }
 
-footer img {
-  max-width: 200px; }
+footer {
+  background-image: url("../img/_global/background_1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  footer img {
+    width: 7.125rem; }
+  footer .info-contact {
+    font-size: 0.9375rem;
+    color: #666666;
+    max-width: 19rem; }
+  footer h6 {
+    font-weight: 600;
+    font-size: 1.125rem; }
+  footer ul li {
+    padding: 0; }
+    footer ul li a {
+      font-size: 0.9375rem;
+      color: #666666; }
+  footer .footer-register {
+    background: #ff6d00; }
+    footer .footer-register h6 {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: lighter; }
+    footer .footer-register p {
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: lighter;
+      margin: 0; }
+    footer .footer-register input {
+      background: #ff6d00;
+      border-radius: 0;
+      border: white 1px solid;
+      color: #fff;
+      outline: none; }
+      footer .footer-register input::placeholder {
+        color: #fff;
+        font-size: 0.8125rem;
+        font-weight: lighter; }
+      footer .footer-register input:focus {
+        background: #ff6d00;
+        color: #fff; }
+    footer .footer-register button {
+      position: absolute;
+      background: #ff6d00;
+      padding-left: 1rem;
+      border: none;
+      border-left: white 1px solid;
+      color: white;
+      font-size: 0.8125rem;
+      cursor: pointer;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      z-index: 1030px; }
+    footer .footer-register ul li {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      border: #fff solid 1px;
+      background: #ff6d00;
+      text-align: center; }
+      footer .footer-register ul li a {
+        display: block;
+        line-height: 1.8rem; }
+        footer .footer-register ul li a i {
+          color: transparent;
+          -webkit-text-stroke-width: 0.4px;
+          -webkit-text-stroke-color: white; }
+  footer ul li {
+    padding: 0.5rem 0; }
+  footer .footer-register ul li a {
+    line-height: 0.5rem; }
+  @media (min-width: 1200px) {
+    footer ul li {
+      padding: 0; }
+    footer .footer-register ul li a {
+      line-height: 1.8rem; } }
 
 body {
   font-family: Roboto;
