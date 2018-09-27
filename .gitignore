@@ -74,6 +74,11 @@ npm-debug.log
 /public/dist/
 /src/*/dist/
 .webpack.json
+dist/
+dist/**.*
+dist/*/**.*
+dist/**
+/dist/
 
 # IDE #
 .idea/

@@ -6,12 +6,34 @@ block variables
 	- var bodyclass = 'home'
 
 block body
-	section.home
-		.container
-			.row
-				.col
-					.jumbotron.text-center.mt-4
-						h1.hidden-md-up.display-4 Awesome Bootstrap Sites!
-						h2.hidden-md-up Dễ dàng triển khai và sử dụng
-						p.lead Bộ công cụ phát triển web vô cùng mạnh mẽ dựa trên nền tảng Bootstrap.
+	section.home-banner
+		.owl-carousel.owl-theme#homeBanner
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center
+				.banner-item-content
+					h1.headers--no-margin.mb-sm-2.text--300 Dịch vụ Content
+					p.text--200.text--no-margin.motion-blur Viết hay thay lời nói của bạn
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center.banner-2
+				.banner-item-content.container
+					.row
+						.col-sm-5.col-md-5
+							p.text--200.text--no-margin 
+								|Bạn cần một bài viết chuẩn
+								br.responsive-break
+								strong.text--700  SEO
+								|, chúng tôi sẽ đáp ứng 
+								br.responsive-break
+								| hơn cả sự mong đợi
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center.banner-3
+				.banner-item-content.container
+					.row
+						.col-sm-5.col-md-5
+							p.text--200.text--no-margin
+								|Tối ưu 
+								strong.text--700 doanh thu
+								|, thu hút 
+								br.responsive-break
+								| người đọc cùng Dịch vụ 
+								br.responsive-break
+								| content
+
 
