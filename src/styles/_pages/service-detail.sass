@@ -1,11 +1,134 @@
 .services-detail-wrapper
-	min-height: 124.625rem
-	h4
-		font-weight: 700
-		color: #333333
-		font-size: 1.875rem
-	h6 
-		font-weight: 600
-		font-size: 0.9375rem
-	p
-		font-size: 0.9375rem
+	min-height: 31.6875rem
+	.services-detail-content
+		h4
+			font-weight: 700
+			color: #333333
+			font-size: 1.875rem
+		h6 
+			font-weight: 600
+			font-size: 0.9375rem
+		p
+			font-size: 0.9375rem
+
+.service-package
+	min-height: 33.3125rem
+	background-image: url("../img/03_services/services_ct/services_ct_combo_bg.png")
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+
+	h2
+		&:before
+			content: ''
+			display: block
+			background-color: white
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			width: 10.375rem
+			height: 0.0625rem
+			bottom: -0.675rem
+	.package-row
+		margin-top: 3rem
+		.package-info
+			background-color: white
+			width: 220px
+			height: 220px
+			border-radius: 50%
+			.text-orange
+				color: #ff6d00
+				font-size: 3rem
+				font-weight: bold
+			.text-black
+				color: #333333
+				font-size: 0.9375rem
+				font-weight: bold
+
+.steps
+	min-height: 32.0625rem
+	.card
+		.card-img-top
+			z-index: 2
+		.card-body
+			h3.card-title
+				position: relative
+				z-index: 1
+				font-weight: bold
+				font-size: 0.9375rem
+				span 
+					margin-left: 21.8%
+				&:after
+					position: absolute
+					color: white
+					font-weight: bold
+					font-size: 2.5rem
+					left: -5%
+					z-index: -1
+					top: -170%
+				&:before
+					content: ''
+					position: absolute
+					display: block
+					background-color: #ff6d00
+					width: 3.5rem
+					height: 3.5rem
+					border-radius: 50%
+					z-index: -1
+					top: -170%
+				&-1
+					&:after
+						content: "01"
+				&-2
+					&:after
+						content: "02"
+				&-3
+					&:after
+						content: "03"
+				&-4
+					&:after
+						content: "04"
+			
+			.card-text
+				font-size: 0.9375rem
+
+	+media-breakpoint-up(xs)
+		.card
+			.card-body
+				h3.card-title
+					span 
+						margin-left: 18.8%
+					&:after
+						left: -4%
+	+media-breakpoint-up(sm)
+		.card
+			.card-body
+				h3.card-title
+					span 
+						margin-left: 9.8%
+					&:after
+						left: -2.5%
+	+media-breakpoint-up(md)
+		.card
+			.card-body
+				h3.card-title
+					span 
+						margin-left: 16%
+					&:after
+						left: -4%
+	+media-breakpoint-up(lg)
+		.card
+			.card-body
+				h3.card-title
+					span 
+						margin-left: 11%
+					&:after
+						left: -2.5%
+	+media-breakpoint-up(xl)
+		.card
+			.card-body
+				h3.card-title
+					span 
+						margin-left: 21.8%
+					&:after
+						left: -5%
