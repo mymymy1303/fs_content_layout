@@ -31,19 +31,8 @@ body
 				background-color: rgba(0,0,0,.7)
 				padding: 2rem 4rem
 	.owl-dots
-		position: absolute
-		bottom: 4rem
-		left: 50%
+		+absolute(auto, auto, 4rem, 50%)
 		transform: translateX(-50%)
-		.owl-dot
-			width: .625rem
-			height: .625rem
-			border-radius: 50%
-			background: #8b949d
-			outline: none
-			margin: 0 .3125rem 0 .3125rem
-		.owl-dot.active
-			background: #ff6d00
 	+media-breakpoint-up(sm)
 		//LANDSCAPE PHONES - 576px to 768px
 		.owl-carousel.owl-theme
@@ -81,7 +70,7 @@ body
 		margin: 0
 		.services-block-img
 			.services-block-icon
-				position: absolute
+				+absolute()
 		figcaption
 			p
 				font-size: .9rem
@@ -90,34 +79,19 @@ body
 		text-decoration: none
 	.owl-carousel.owl-theme
 		.owl-dots
-			display: flex
-			justify-content: center
-			align-items: center
+			+flex(center, center)
 			margin-top: 1.5rem
-			.owl-dot
-				width: .625rem
-				height: .625rem
-				border-radius: 50%
-				background: #8b949d
-				outline: none
-				margin: 0 .3125rem 0 .3125rem
-			.owl-dot.active
-				background: #ff6d00
 		.owl-item
-			display: flex
-			justify-content: center
-			align-items: center
+			+flex(center, center)
 	.services-xl
 		display: none
 	.services-item
-		width: 11rem
-		height: 11rem
+		+size(11rem, 11rem)
 		border-radius: .3125rem
 		box-shadow: .25rem .3125rem 0px 0px rgba(0, 0, 0, 0.15)
 		figure
 			img
-				width: 4.375rem
-				height: 4.375rem
+				+size(4.375rem, 4.375rem)
 			figcaption
 				p
 					color: #ffffff
@@ -144,11 +118,8 @@ body
 		.owl-carousel.owl-theme
 			display: none
 		.services-xl
-			display: flex
-			justify-content: center
-			align-items: center
-			position: absolute
-			top: -2rem
+			+flex(center, center)
+			+absolute(-2rem, auto, auto, auto, 1)
 			.services-item
 				margin: 0 .25rem
 				z-index: 2
@@ -158,12 +129,9 @@ body
 					margin-right: 0
 			&:before
 				content: ''
-				position: absolute
-				z-index: 1
-				height: 50%
-				width: 100%
+				+size(100%, 50%)
+				+absolute(0, auto, auto, auto, 1)
 				background-color: #fff
-				top: 0
 				border-radius: 1px 1px 0 0
 				box-shadow: 0 0 0 .8rem #FFFFFF
 
@@ -176,8 +144,7 @@ body
 		font-size: 1.875rem
 	a.btn
 		padding: 0
-		width: 8rem
-		height: 2.5rem
+		+size(8rem, 2.5rem)
 		background-color: #ff6d00
 		border-radius: 1.25rem
 		border: 0
@@ -202,23 +169,11 @@ body
 	figure
 		margin: 0
 		img
-			width: 2.5rem
-			height: 3.75rem
+			+size(2.5rem, 3.75rem)
 	.owl-carousel.owl-theme
 		.owl-dots
-			display: flex
-			justify-content: center
-			align-items: center
+			+flex(center, center)
 			margin-top: 1.5rem
-			.owl-dot
-				width: .625rem
-				height: .625rem
-				border-radius: 50%
-				background: #8b949d
-				outline: none
-				margin: 0 .3125rem 0 .3125rem
-			.owl-dot.active
-				background: #ff6d00
 		.home-feedback-item
 			.feedback-content
 				font-size: 1.5rem
@@ -230,22 +185,17 @@ body
 		padding-bottom: 5.5rem
 		.home-feedback-side
 			display: initial
-			position: absolute
-			right: 0
-			bottom: -5rem
-			width: 30rem
-			height: 28rem
-			z-index: 1
+			+absolute(auto, 0, -5rem, auto, 1)
+			+size(30rem, 28rem)
 		.owl-carousel.owl-theme
-			width: 50%
+			+size(50%, auto)
 			margin-left: 25%
 			.owl-dots
 				margin-top: 3.75rem
 	+media-breakpoint-up(xl)
 		// DESKTOP, 1200px and up
 		.home-feedback-side
-			width: 38rem
-			height: 36rem
+			+size(38rem, 36rem)
 			bottom: -6.5rem
 
 // /////////////////HOME-NEWS//////////////////////
@@ -259,20 +209,7 @@ body
 		position: relative
 		padding: 0 1rem 0 1rem
 		.owl-nav
-			display: flex
-			justify-content: center
-			align-items: center
-			.owl-next, .owl-prev
-				width: 3rem
-				height: 3rem
-				line-height: 3rem
-				font-size: 3rem
-				margin: 0 1rem 0 1rem
-				color:#cccccc
-				outline: none
-				transition: .3s ease-in-out
-				&:hover
-					color: #777777
+			+flex(center, center)
 		a
 			text-decoration: none
 			.home-news-item
@@ -292,13 +229,10 @@ body
 					p
 						color: #ff6d00
 		&:before
-			position: absolute
 			content: ''
-			width: calc(100% - 2rem)
-			height: 1px
+			+absolute(auto, auto, -3rem, 1rem)
+			+size(calc(100% - 2rem), 1px)
 			background: #e5e5e5
-			left: 1rem
-			bottom: -3rem
 	+media-breakpoint-up(lg)
 		// DESKTOP, 992px and up
 		padding: 10rem 0 3rem 0
@@ -306,15 +240,13 @@ body
 			padding: 0 3rem 0 3rem
 			.owl-nav
 				justify-content: space-between
-				position: absolute
-				width: 100%
-				left: 0
-				top: 50%
+				+absolute(50%, auto, auto, 0)
+				+size(100%, auto)
 				transform: translateY(-50%)
 				.owl-next, .owl-prev
 					margin: 0
 			&:before
-				width: calc(100% - 6rem)
+				+size(calc(100% - 6rem), 1px)
 				left: 3rem
 		a
 			.home-news-item
@@ -329,20 +261,7 @@ body
 		position: relative
 		padding: 0 1rem 0 1rem
 		.owl-nav
-			display: flex
-			justify-content: center
-			align-items: center
-			.owl-next, .owl-prev
-				width: 3rem
-				height: 3rem
-				line-height: 3rem
-				font-size: 3rem
-				margin: 0 1rem 0 1rem
-				color:#cccccc
-				outline: none
-				transition: .3s ease-in-out
-				&:hover
-					color: #777777
+			+flex(center, center)
 		.home-client-items
 			figure
 				margin: 0
@@ -353,15 +272,13 @@ body
 			padding: 0 3rem 0 3rem
 			.owl-nav
 				justify-content: space-between
-				position: absolute
-				width: 100%
-				left: 0
-				top: 50%
+				+absolute(50%, auto, auto, 0)
 				transform: translateY(-50%)
+				+size(100%, auto)
 				.owl-next, .owl-prev
 					margin: 0
 			&:before
-				width: calc(100% - 6rem)
+				+size(calc(100% - 6rem), auto)
 				left: 3rem
 		a
 			.home-news-item

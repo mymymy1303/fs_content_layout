@@ -24,7 +24,6 @@ $(document).ready(function () {
 			1200: {
 				loop: false,
 				items: 6,
-				mouseDrag: false, 
 				dots: false
 			}
 		}

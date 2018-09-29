@@ -52,6 +52,23 @@ html, body
 	background-color: $section_bg
 	position: relative
 
+=flex($align_items: center, $justify_content: center)
+	display: flex
+	align-items: $align_items
+	justify-content: $justify_content
+
+=absolute($_top: auto, $_right:auto, $_bottom:auto, $_left:auto, $z_index: 1)
+	position: absolute
+	top: $_top
+	right: $_right
+	bottom: $_bottom
+	left: $_left
+	z-index: $z_index
+
+=size($width: auto, $height: auto)
+	width: $width
+	height: $height
+
 .flex
 	display: flex
 	&--align-center
@@ -74,3 +91,28 @@ html, body
 		transform: rotate(90deg)
 	&--rotate-180
 		transform: rotate(180deg)
+
+//OWL-CAROUSEL
+.owl-carousel.owl-theme
+	.owl-dots
+		.owl-dot
+			+size(.625rem, .625rem)
+			border-radius: 50%
+			background: #8b949d
+			outline: none
+			margin: 0 .3125rem 0 .3125rem
+		.owl-dot.active
+			background: #ff6d00
+
+.owl-carousel.owl-theme
+	.owl-nav
+		.owl-next, .owl-prev
+			+size(3rem, 3rem)
+			line-height: 3rem
+			font-size: 3rem
+			margin: 0 1rem 0 1rem
+			color:#cccccc
+			outline: none
+			transition: .3s ease-in-out
+			&:hover
+				color: #777777
