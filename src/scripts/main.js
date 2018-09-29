@@ -36,4 +36,39 @@ $(document).ready(function () {
 		margin:10,
 		dots: true
 	});
+
+
+	$('#homeNews').owlCarousel({
+		items:1,
+		loop:true,
+		margin:30,
+		dots: false,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			576: {
+				items: 2
+			},
+			768: {
+				items: 3
+			}
+		}
+	});
+
+	$('#homeClients').owlCarousel({
+		items:2,
+		loop:true,
+		margin:30,
+		dots: false,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			576: {
+				items: 3
+			},
+			768: {
+				items: 4
+			}
+		}
+	});
 })

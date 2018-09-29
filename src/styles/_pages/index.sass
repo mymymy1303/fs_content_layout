@@ -48,10 +48,7 @@ body
 		//LANDSCAPE PHONES - 576px to 768px
 		.owl-carousel.owl-theme
 			.banner-item
-				background-image: url('./../../img/01_home/home_banner_1_full.png')
 				.banner-item-content
-					margin-top: -1.5rem
-					box-shadow: initial
 					h1
 						letter-spacing: .5rem
 					p
@@ -62,6 +59,14 @@ body
 					text-align: left
 					p
 						letter-spacing: .2rem
+	+media-breakpoint-up(md)
+		//TABLETS, 768px - 992px
+		.owl-carousel.owl-theme
+			.banner-item
+				background-image: url('./../../img/01_home/home_banner_1_full.png')
+				.banner-item-content
+					margin-top: -1.5rem
+					box-shadow: initial
 
 // /////////////////HOME-SERVICES//////////////////////
 .home-services
@@ -128,6 +133,11 @@ body
 			background-color: #64909b
 		&--68802d
 			background-color: #68802d
+	+media-breakpoint-up(md)
+		//TABLET 768px - 992px
+		.owl-carousel.owl-theme
+			.owl-dots
+				margin-bottom: 2rem
 	+media-breakpoint-up(xl)
 		//LARGE DESKTOP: 1200px and up
 		padding-top: 13rem
@@ -225,6 +235,7 @@ body
 			bottom: -5rem
 			width: 30rem
 			height: 28rem
+			z-index: 1
 		.owl-carousel.owl-theme
 			width: 50%
 			margin-left: 25%
@@ -236,3 +247,123 @@ body
 			width: 38rem
 			height: 36rem
 			bottom: -6.5rem
+
+// /////////////////HOME-NEWS//////////////////////
+.home-news
+	+section(30rem, #ffffff)
+	padding: 3rem 0 3rem 0
+	h2
+		font-size: 1.875rem
+		margin-bottom: 2.25rem
+	.owl-carousel.owl-theme
+		position: relative
+		padding: 0 1rem 0 1rem
+		.owl-nav
+			display: flex
+			justify-content: center
+			align-items: center
+			.owl-next, .owl-prev
+				width: 3rem
+				height: 3rem
+				line-height: 3rem
+				font-size: 3rem
+				margin: 0 1rem 0 1rem
+				color:#cccccc
+				outline: none
+				transition: .3s ease-in-out
+				&:hover
+					color: #777777
+		a
+			text-decoration: none
+			.home-news-item
+				time
+					font-size: .75rem
+					color: #cccccc
+					transition: .3s ease-in-out
+				p
+					font-size: 1rem
+					line-height: 1.2rem
+					color: #000000
+					transition: .3s ease-in-out
+			&:hover, &:active
+				.home-news-item
+					time
+						color: #000000
+					p
+						color: #ff6d00
+		&:before
+			position: absolute
+			content: ''
+			width: calc(100% - 2rem)
+			height: 1px
+			background: #e5e5e5
+			left: 1rem
+			bottom: -3rem
+	+media-breakpoint-up(lg)
+		// DESKTOP, 992px and up
+		padding: 10rem 0 3rem 0
+		.owl-carousel.owl-theme
+			padding: 0 3rem 0 3rem
+			.owl-nav
+				justify-content: space-between
+				position: absolute
+				width: 100%
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				.owl-next, .owl-prev
+					margin: 0
+			&:before
+				width: calc(100% - 6rem)
+				left: 3rem
+		a
+			.home-news-item
+				figure
+					margin: 0
+
+// /////////////////HOME-CLIENTS//////////////////////
+.home-clients
+	+section(5rem, #ffffff)
+	padding: 0rem 0 1rem 0
+	.owl-carousel.owl-theme
+		position: relative
+		padding: 0 1rem 0 1rem
+		.owl-nav
+			display: flex
+			justify-content: center
+			align-items: center
+			.owl-next, .owl-prev
+				width: 3rem
+				height: 3rem
+				line-height: 3rem
+				font-size: 3rem
+				margin: 0 1rem 0 1rem
+				color:#cccccc
+				outline: none
+				transition: .3s ease-in-out
+				&:hover
+					color: #777777
+		.home-client-items
+			figure
+				margin: 0
+	+media-breakpoint-up(lg)
+		// DESKTOP, 992px and up
+		padding: 1rem 0 1rem 0
+		.owl-carousel.owl-theme
+			padding: 0 3rem 0 3rem
+			.owl-nav
+				justify-content: space-between
+				position: absolute
+				width: 100%
+				left: 0
+				top: 50%
+				transform: translateY(-50%)
+				.owl-next, .owl-prev
+					margin: 0
+			&:before
+				width: calc(100% - 6rem)
+				left: 3rem
+		a
+			.home-news-item
+				figure
+					margin: 0
