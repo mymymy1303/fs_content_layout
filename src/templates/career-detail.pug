@@ -1,0 +1,162 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var require = 'require for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.career-detail-wrapper.py-4
+		.container
+			.row
+				.col-lg-9
+					.row
+						.col
+							h2 Nhân viên Content Marketing
+							hr
+					.row.career-require
+						.col-lg-6.require
+							.row
+								.col-6.pr-0.pr-sm-1
+									ul.list-unstyled.require-left
+										li
+											i.fa.fa-tag.mr-1.mr-sm-3 
+											span Chức vụ
+										li
+											i.fa.fa-bars.mr-1.mr-sm-3 
+											span Ngành nghề
+										li
+											i.fa.fa-key.mr-1.mr-sm-3  
+											span Hình thức làm việc
+										li
+											i.fa.fa-calendar-minus-o.mr-1.mr-sm-3  
+											span Hạn nộp hồ sơ
+								.col-6
+										ul.list-unstyled.require-right
+											li
+												span Nhân viên
+											li 
+												span Nhân viên content
+											li 
+												span Làm việc theo ca
+											li 
+												span 29.12.2018
+						.col-lg-6.require
+							.row
+								.col-6
+									ul.list-unstyled.require-left
+										li
+											i.fa.fa-user.mr-1.mr-sm-3 
+											span Số lượng
+										li 
+											i.fa.fa-briefcase.mr-1.mr-sm-3
+											span Kinh nghiệm
+										li 
+											i.fa.fa-graduation-cap.mr-1.mr-sm-3
+											span Bằng cấp
+										li 
+											i.fa.fa-birthday-cake.mr-1.mr-sm-3
+											span Độ tuổi
+								.col-6
+										ul.list-unstyled.require-right
+											li 
+												span 02
+											li 
+												span 01 năm
+											li 
+												span Tốt nghiệp THPT
+											li 
+												span 18-35
+					hr
+					.row.career-description.pb-3
+						.col
+							h3 Mô tả công việc
+							ul
+								li
+									p Viết nội dung bài đăng lên các kênh: Facebook, website,… theo yêu cầu của quản lý.
+								li
+									p Đề xuất, thực hiện các công việc nhằm tăng chất lượng bài/tin, lượng truy cập facebook, website.
+								li
+									p Hỗ trợ xây dựng nội dung sáng tạo cho các sự kiện, chiến dịch quảng cáo, truyền thông thương hiệu…
+								li
+									p Thực hiện những việc khác theo sự phân công của Quản lý trực tiếp.
+								li
+									p Công việc cụ thể trao đổi trong quá trình phỏng vấn
+					.row.career-description.pb-3
+						.col
+							h3 Quyền lợi được hưởng
+							ul
+								li
+									p Được đóng Bảo hiểm y tế, BHXH theo luật định
+								li
+									p Được hỗ trợ đào tạo chuyên ngành nâng cao nghiệp vụ, kiến thức trình độ
+								li
+									p Được hưởng phúc lợi: Ngày lễ tết, ngày sinh nhật
+								li
+									p Chế độ thưởng theo quy định riêng của Công ty trong từng thời kỳ và được xem xét tuỳ thuộc vào cống hiến của từng cá nhân
+					.row.career-description.pb-3
+						.col
+							h3 Yêu cầu khác
+							ul
+								li
+									p Cẩn thận, trung thực, chính xác
+								li
+									p Nhiệt tình, hoạt bát, có sức khoẻ tốt
+								li
+									p Không vướng bận việc học
+					.row.career-description.pb-3
+						.col
+							h3 Hồ sơ bao gồm
+							ul
+								li
+									p Đơn xin việc (ghi rõ vị trí ứng tuyển)
+								li
+									p Sơ yếu lý lịch có xác nhận chính quyền địa phương
+								li
+									p Văn bằng chứng chỉ liên quan
+								li
+									p Giấy khám sức khỏe (thời hạn 6 tháng)
+								li
+									p Hộ khẩu photo công chứng
+								li
+									p CMND photo công chứng
+					.row.career-description.pb-3
+						.col
+							h3 Nộp hồ sơ
+							p  Tại văn phòng Trung tâm: 
+								strong LL1G Ba Vì, Phường 5, Quận 10, Thành phố Hồ Chí Minh
+							ul
+								li
+									p.contact Hotline: 098 193 5440
+								li
+									p.contact Email: contact@dichvucontents.com 
+					.row
+						.col 
+							a.btn(href="#").btn-outline-secondary.btn-submit 
+								| Nộp hồ sơ
+								span
+				.col-12.col-sm-6.col-lg-3.career-more.mt-5.mt-lg-0
+					.row
+						.col
+							h4.mb-4 Vị trí khác
+							.career-more-item
+								a(href="#") Nhân viên kinh doanh
+								br
+								time 31.7.2018
+							hr
+							.career-more-item
+								a(href="#") Nhân viên kế toán
+								br
+								time 31.7.2018
+							hr
+							.career-more-item
+								a(href="#") Nhân viên bảo vệ
+								br
+								time 31.7.2018
+							hr
+							.career-more-item
+								a(href="#") Nhân viên thiết kế
+								br
+								time 31.7.2018
+							hr
+
