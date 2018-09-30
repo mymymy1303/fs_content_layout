@@ -1,0 +1,58 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.career-wrapper.d-flex.align-items-center.py-5.py-lg-0
+		.container
+			.row.career-content
+				.col-lg-6
+					img(src="./img/06_recruit/recruit_intro_img_1.png", alt="").img-fluid
+				.col-lg-6.mt-3.mt-lg-0
+					h4.mb-3 Tuyển dụng
+					p Hãy tìm kiếm cơ hội nghề nghiệp tại Dịch Vụ Content để khẳng định bản thân và giao lưu học hỏi tạo cho bản thân nền tảng kiến thức vững vàng trong môi trường làm việc thân thiện và năng động
+					p Trong định hướng phát triển nhân sự, dịch vụ content tập trung xây dựng chính sách thu hút nhân tài thông qua chính sách lương, thưởng đặc biệt cạnh tranh kết hợp với các hoạt động đào tạo, bồi dưỡng nhằm giữ chân CBNV lâu dài, xây dựng phát triển đội ngũ quản lý kế thừa nhằm đáp ứng nhu cầu nhân sự cấp quản lý cho những năm tiếp theo cũng như thu hút nhân lực giỏi từ nhiều nguồn khác nhau về làm việc cho Công ty.
+			.row.career-list.mt-5
+				.col
+					h4.mb-4 CƠ HỘI NGHỀ NGHIỆP
+					table.table.table-sm-responsive
+						thead
+							tr
+								th(scope="col").text-center STT
+								th(scope="col") Vị trí tuyển dụng
+								th(scope="col").text-center Số lượng
+								th(scope="col") Hạn nộp hồ sơ
+						tbody
+							tr
+								th(scope="row").text-center.order_number 01
+								td.position Nhân viên kinh doanh
+								td.text-center 01
+								td.date 31.10.2018
+							tr
+								th(scope="row").text-center.order_number 02
+								td.position Nhân viên content marketing
+								td.text-center 05
+								td.date 31.10.2018
+							tr
+								th(scope="row").text-center.order_number 03
+								td.position Nhân viên kế toán
+								td.text-center 01
+								td.date 31.10.2018
+							tr
+								th(scope="row").text-center.order_number 04
+								td.position Nhân viên biên tập
+								td.text-center 04
+								td.date 31.10.2018
+							tr
+								th(scope="row").text-center.order_number 05
+								td.position Nhân viên thiết kế
+								td.text-center 01
+								td.date 31.10.2018
+							tr
+								th(scope="row").text-center.order_number 06
+								td.position Nhân viên bảo vệ
+								td.text-center 02
+								td.date 31.10.2018
