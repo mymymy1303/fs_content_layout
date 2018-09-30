@@ -1,0 +1,95 @@
+.career-detail-wrapper
+	min-height: 90rem
+	background-image: url("../img/06_recruit/recruit_ct/recruit_ct_side_img_1.png")
+	background-repeat: no-repeat
+	background-position: bottom right
+	h2 
+		font-size: 1.875rem
+		font-weight: 700
+	.career-require
+		line-height: 2.1875rem
+		font-size: 0.9375rem
+		.require
+			.require-left
+				font-weight: 600
+				li
+					i
+						display: inline-block
+						width: 0.9375rem
+						color: #ff6d00
+	
+	.career-description
+		h3 
+			font-size: 1.125rem
+			color: #ff6d00
+			font-weight: 600
+			text-transform: uppercase
+			line-height: 2.8rem
+		p 
+			font-size: 0.90625rem
+			line-height: 1.1rem
+		.contact
+			color: #666666
+		ul
+			line-height: 0
+			list-style: none
+			padding-left: 0
+			li 
+				::before 
+					content: "\f111"
+					font-family: FontAwesome
+					color: #c5c5c5
+					margin-right: 0.5rem
+					font-size: 0.5rem
+	.btn-submit
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 12.5rem
+		height: 2.5625rem
+		border-radius: 25px
+		text-transform: uppercase
+		position: relative
+		span
+			margin-right: 10%
+		&:before
+			content: "\f054"
+			font-family: FontAwesome
+			display: block
+			position: absolute
+			width: 2rem
+			height: 2rem
+			background-color: #ff6d00
+			border-radius: 50%
+			top: 50%
+			right: 2%
+			transform: translateY(-50%)
+			color: white
+			line-height: 2rem
+			padding-left: 0.125rem
+		&:hover
+			background-color: #ff6d00
+			border: 1px solid #ff6d00
+	
+	.career-more
+		h4 
+			font-size: 1.25rem
+			color: #ff6d00
+		a 
+			font-size: 0.9375rem
+			color: #000
+			&:hover
+				text-decoration: none
+				font-weight: 500
+				color: #ff6d00
+		time
+			font-size: 0.875rem
+			color: #666666
+
+	/*Responsive */
+	+media-breakpoint-down(sm)
+		background-image: none
+		h2 
+			font-size: 1.5rem
+		.career-require
+			font-size: 0.86rem
