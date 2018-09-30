@@ -1,0 +1,44 @@
+.contact
+	+section(30rem, #ffffff)
+	padding: 4rem 0 7rem 0
+	h3
+		font-size: 1.5rem
+	figure
+		margin: 0
+		.contact-block-img
+			.contact-block-icon
+				+absolute()
+		figcaption
+			h3
+				font-size: 1.125rem
+			p
+				font-size: .9rem
+				line-height: 1.4rem
+	.contact-form
+		input[type="text"], input[type="email"], input[type="tel"], textarea
+			background-color: #f8f8f8
+		button[type="submit"]
+			background-color: #ff8d38
+			outline: none
+			border: 0
+			padding: 0
+			+size(100%, 3.0625rem)
+			border-radius: 1.25rem
+			color: #ffffff
+			font-weight: 500
+			text-transform: uppercase
+			span
+				i
+					font-weight: 700
+					font-size: 1.25rem
+					margin-left: 1rem
+			&:active
+				background-color: darken(#ff8d38, 15%)
+	+media-breakpoint-up(lg)
+		//DESKTOP: 992px and up
+		padding-bottom: 4rem
+		.contact-form
+			button[type="submit"]
+				cursor: pointer
+				+size(10rem, 3.0625rem)
+				float: right
