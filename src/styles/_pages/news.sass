@@ -1,0 +1,89 @@
+html, body
+	font-family: 'Encode Sans', sans-serif
+	font-size: 16px
+	height: 100%
+	width: 100%
+
+// -------------------------TOP NEWS------------------------
+.news
+	+section(30rem, #fff)
+	padding: 4rem 0 4rem 0
+	h2
+		font-size: 1.875rem
+	a
+		text-decoration: none
+		time
+			color: #adadad
+			font-size: .8rem
+			line-height: .8rem
+			vertical-align: top
+		h3
+			color: #000
+			font-size: 1.125rem
+		&:active
+			time
+				color: #000
+			h3
+				color: #ff6d00
+	.top-news-main
+		figcaption
+			padding-left: .75rem
+			border-left: .4rem solid #ff6d00
+	.top-news-side, .latest-news-item
+		figure
+			+flex(flex-start, initial)
+			flex-direction: row-reverse
+			img
+				flex: 0 0 30%
+				max-width: 30%
+			figcaption
+				flex: 0 0 70%
+				max-width: 70%
+				+flex(flex-start, space-between)
+				flex-direction: column-reverse
+				h3
+					font-size: .9rem
+					line-height: 1.3rem
+	.latest-news-item
+		h3
+			font-size: 1rem
+	+media-breakpoint-up(md)
+		//TABLETS, 768-992px
+		.top-news-side
+			height: 100%
+			+flex(initial, space-between)
+			flex-direction: column
+			figure
+				flex-direction: row
+				img
+					flex: 0 0 40%
+					max-width: 40%
+				figcaption
+					flex: 0 0 60%
+					max-width: 60%
+					flex-direction: column
+		.latest-news-item
+			figure
+				flex-direction: column
+				text-align: center
+				align-items: center
+				figcaption
+					flex-direction: column
+					text-align: center
+					align-items: center
+					h3
+						font-weight: 400 !important
+						font-size: 1rem
+				figcaption, img
+					flex: 0 0 100%
+					max-width: 100%
+		a
+			time, h3
+				transition: all .3s ease-in-out
+			&:hover
+				time
+					color: #000
+					transition: all .3s ease-in-out
+				h3
+					color: #ff6d00
+					transition: all .3s ease-in-out
