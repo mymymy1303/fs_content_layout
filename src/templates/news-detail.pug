@@ -1,0 +1,107 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	// -------------------------BANNER-------------------------
+	section.home-banner
+		.owl-carousel.owl-theme#homeBanner
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center
+				.banner-item-content
+					h1.headers--no-margin.mb-sm-2.text--300 Dịch vụ Content
+					p.text--200.text--no-margin.motion-blur Viết hay thay lời nói của bạn
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center.banner-2
+				.banner-item-content.container
+					.row
+						.col-sm-5.col-md-5
+							p.text--200.text--no-margin 
+								|Bạn cần một bài viết chuẩn
+								br.responsive-break
+								span.text--700  SEO
+								|, chúng tôi sẽ đáp ứng 
+								br.responsive-break
+								| hơn cả sự mong đợi
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center.banner-3
+				.banner-item-content.container
+					.row
+						.col-sm-5.col-md-5
+							p.text--200.text--no-margin
+								|Tối ưu 
+								span.text--700 doanh thu
+								|, thu hút 
+								br.responsive-break
+								| người đọc cùng Dịch vụ 
+								br.responsive-break
+								| content
+
+	// -------------------------NEWS-DETAIL-------------------------
+	section.news
+		.container
+			.row
+				.col-12.col-md-9
+					h2.headers--no-margin.text--700.mb-1 Đột phá trong năm 2018 với 9 xu hướng Content Marketing được mong đợi nhất
+					time 13/08/2018
+					p.mt-3.text--500 Một số thuật ngữ được sử dụng trong bài viết 9 Xu hướng Content Marketing 2018:
+					p.text--500
+						span.text--700 Influencer marketing: 
+						| một hình thức marketing sử dụng những influencer (tạm dịch là người ảnh hưởng) để gửi thông điệp của nhãn hàng đến thị trường.
+					p.text--500
+						span.text--700 Cause marketing: 
+						| kết hợp giữa quảng bá sản phẩm và khuyến khích phúc lợi xã hội.
+					p.text--500
+						span.text--700 Thế hệ Millennial: 
+						| hay còn gọi là thế hệ Y, khái niệm dùng để chỉ những người sinh ra trong khoảng thời gian từ 1980 đến những năm đầu thập niên 2000 (18-35 tuổi). Đây là những người lớn lên cùng các phương tiện truyền thông xã hội như forum, blog, Facebook… đồng thời họ là lực lượng lao động chủ đạo của hiện tại và tương lai.
+					p.text--500
+						span.text--700 Proximity marketing: 
+						|là việc phân phối nội dung quảng cáo không dây đến một địa điểm cụ thể. Người nhận là các cá nhân ở địa điểm gần đó với các thiết bị điện tử để nhận tín hiệu.
+					p.text--500
+						span.text--700 Actionable marketing: 
+						| khả năng tiếp thị để thuyết phục khách hàng tiềm năng và công chúng tham gia với công ty của bạn.
+					p.text--500
+						span.text--700 B2B: 
+						| viết tắt của thuật ngữ Business To Business – mô hình kinh doanh thương mại điện tử trong đó giao dịch xảy ra trực tiếp giữa các doanh nghiệp với nhau.
+					figure
+						img(src="./img/04_news/news_ct/news_ct_img_1.png", alt="").img-fluid
+
+					
+					p.text--500 Nhiều tổ chức đã thực hiện các khoản đầu tư công phu về content marketing trong những năm gần đây và đã cho ra  báo cáo về những khoản đầu tư đem lại cổ tức.Đó là những những dữ liệu mới nhất từ CMI chúng tôi nhận được.
+
+					p.text--500 Theo năm 2017 báo cáo tiêu chuẩn và xu hướng từ nội dung Viện Marketing và MarketingProfs, hơn 60% các nhà tiếp thị B2B báo cáo rằng chiến lược content marketing của họ có hiệu quả hơn so với một năm trước đó.
+
+					p.text--500 
+						| Trong năm 2015, 4% các marketers cảm thấy những nỗ lực của họ là “không hề có hiệu quả.”
+						span.text--600 Rất may, những con số được cải thiện trong năm 2016 với 0% các marketers cho rằng content marketing của họ là “không hề hiệu quả.”
+
+					p.text--500 Có một số yếu tố góp phần cho sự thành công ấy, trong đó có chất lượng nội dung tốt hơn, xây dựng chiến lược, nhiều thời gian dành cho content marketing, và nhắm mục tiệu tốt hơn trong phân phối nội dung.
+
+					figure
+						img(src="./img/04_news/news_ct/news_ct_img_2.png", alt="").img-fluid
+
+					p.text--500 Có thể dự đoán xu hướng, cũng như sự thay đổi trong hành vi của đối tượng dựa trên các xu hướng và cập nhật công nghệ, có thể giúp bạn điều chỉnh chiến lược của bạn và dẫn đầu làn sóng.
+				.col-12.col-md-3
+					.top-news-side.mt-md-4
+						h3.other-news.text--500.text-uppercase.mt-3.mb-4.mt-md-0 tin tức khác
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/01_home/home_news_1.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0.pl-md-3
+									time.mt-2.mt-md-0 08/06/2018
+									h3.headers--no-margin.text--500.mt-md-2 Vai trò của thiết kế trong content marketing và điều marketer nào cũng phải có
+							hr
+						a(href="javascript:void(0)")
+							figure.figure--no-margin.mt-5.mt-md-0
+								img(src="./img/01_home/home_news_2.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0.pl-md-3
+									time.mt-2.mt-md-0 08/06/2018
+									h3.headers--no-margin.text--500.mt-md-2 5 loại content chính mà sản phẩm nào cũng phải có
+							hr
+						a(href="javascript:void(0)")
+							figure.figure--no-margin.mt-5.mt-md-0
+								img(src="./img/01_home/home_news_3.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0.pl-md-3
+									time.mt-2.mt-md-0 08/06/2018
+									h3.headers--no-margin.text--500.mt-md-2 7 công thức để tạo ra tiêu đề sát thủ
+
