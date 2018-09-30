@@ -43,6 +43,10 @@ html, body
 	&--no-margin
 		margin: 0
 
+.figure
+	&--no-margin
+		margin: 0
+
 //LAYOUT
 =section($section_min_height: 30rem, $section_bg: #ffffff)
 	min-height: $section_min_height
@@ -116,3 +120,34 @@ html, body
 			transition: .3s ease-in-out
 			&:hover
 				color: #777777
+
+//PAGINATION
+.pagination
+	justify-content: center
+	align-items: center
+	ul
+		font-size: 0
+		li
+			+size(2rem, 2rem)
+			border-radius: 50%
+			background-color: #f4f4f4
+			transition: all .3s ease-in-out
+			a.btn
+				+size(2rem, 2rem)
+				border-radius: 50%
+				color: #777777
+				padding: 0
+				line-height: 2rem
+				border: 0
+				outline: none
+				transition: all .3s ease-in-out
+				i
+					font-size: 1rem
+					+size(2rem, 2rem)
+					+flex(center, center)
+			&:hover
+				background-color: #ff6d00
+				transition: all .3s ease-in-out
+				a.btn
+					color: #ffffff
+					transition: all .3s ease-in-out
