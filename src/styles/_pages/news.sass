@@ -1,15 +1,12 @@
-html, body
-	font-family: 'Encode Sans', sans-serif
-	font-size: 16px
-	height: 100%
-	width: 100%
-
 // -------------------------TOP NEWS------------------------
 .news
 	+section(30rem, #fff)
 	padding: 4rem 0 4rem 0
 	h2
 		font-size: 1.875rem
+	time
+		color: #adadad
+		font-size: .8rem
 	a
 		text-decoration: none
 		time
@@ -25,11 +22,10 @@ html, body
 				color: #000
 			h3
 				color: #ff6d00
-	.top-news-main
-		figcaption
-			padding-left: .75rem
-			border-left: .4rem solid #ff6d00
-	.top-news-side, .latest-news-item
+	.top-news-side
+		.other-news
+			font-size: 1.25rem
+			color: #ff6d00
 		figure
 			+flex(flex-start, initial)
 			flex-direction: row-reverse
@@ -42,16 +38,13 @@ html, body
 				+flex(flex-start, space-between)
 				flex-direction: column-reverse
 				h3
-					font-size: .9rem
-					line-height: 1.3rem
-	.latest-news-item
-		h3
-			font-size: 1rem
+					font-size: .8125rem
+					line-height: 1.2rem
 	+media-breakpoint-up(md)
 		//TABLETS, 768-992px
 		.top-news-side
 			height: 100%
-			+flex(initial, space-between)
+			+flex(initial, initial)
 			flex-direction: column
 			figure
 				flex-direction: row
@@ -62,21 +55,9 @@ html, body
 					flex: 0 0 60%
 					max-width: 60%
 					flex-direction: column
-		.latest-news-item
-			figure
-				flex-direction: column
-				text-align: center
-				align-items: center
-				figcaption
-					flex-direction: column
-					text-align: center
-					align-items: center
 					h3
-						font-weight: 400 !important
-						font-size: 1rem
-				figcaption, img
-					flex: 0 0 100%
-					max-width: 100%
+						height: 2.4rem
+						overflow: hidden
 		a
 			time, h3
 				transition: all .3s ease-in-out
