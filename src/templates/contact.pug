@@ -1,0 +1,104 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	// -------------------------BANNER-------------------------
+	section.home-banner
+		.owl-carousel.owl-theme#homeBanner
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center
+				.banner-item-content
+					h1.headers--no-margin.mb-sm-2.text--300 Dịch vụ Content
+					p.text--200.text--no-margin.motion-blur Viết hay thay lời nói của bạn
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center.banner-2
+				.banner-item-content.container
+					.row
+						.col-sm-5.col-md-5
+							p.text--200.text--no-margin 
+								|Bạn cần một bài viết chuẩn
+								br.responsive-break
+								span.text--700  SEO
+								|, chúng tôi sẽ đáp ứng 
+								br.responsive-break
+								| hơn cả sự mong đợi
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center.banner-3
+				.banner-item-content.container
+					.row
+						.col-sm-5.col-md-5
+							p.text--200.text--no-margin
+								|Tối ưu 
+								span.text--700 doanh thu
+								|, thu hút 
+								br.responsive-break
+								| người đọc cùng Dịch vụ 
+								br.responsive-break
+								| content
+
+	// -------------------------CONTACT-------------------------
+	section.contact
+		.container
+			.row
+				.col
+					h2.text--700.text-center.headers--no-margin Liên hệ
+			.row.mt-5
+				.col-12.col-md-4
+					figure
+						.contact-block-img.flex.flex--align-center.flex--justify-center
+							img(src="./img/05_contact/contact_block_bg.png", alt="")
+							img.contact-block-icon.pr-2(src="./img/05_contact/contact_block_1_icon.png", alt="")
+						figcaption.text-center
+							h3.headers--no-margin.text--700.mt-3.mt-md-4.mb-2.px-2 Địa chỉ
+							p.text--no-margin.text--400.mb-5.mt-md-0.px-3.px-sm-5.px-md-5 LL1G Ba Vì, Phường 5, Quận 10, Thành phố Hồ Chí Minh
+				.col-12.col-md-4
+					figure
+						.contact-block-img.flex.flex--align-center.flex--justify-center
+							img.transform--rotate-90(src="./img/05_contact/contact_block_bg.png", alt="")
+							img.contact-block-icon(src="./img/05_contact/contact_block_2_icon.png", alt="")
+						figcaption.text-center
+							h3.headers--no-margin.text--700.mt-3.mt-md-4.mb-2.px-2 Hotline
+							p.text--no-margin.text--400.mb-5.mt-md-0.px-3.px-sm-5.px-md-3 
+								|Gọi ngay cho chúng tôi 
+								br 
+								|098 193 5440
+
+				.col-12.col-md-4
+					figure
+						.contact-block-img.flex.flex--align-center.flex--justify-center
+							img.transform--rotate-180(src="./img/05_contact/contact_block_bg.png", alt="")
+							img.contact-block-icon.ml-2(src="./img/05_contact/contact_block_3_icon.png", alt="")
+						figcaption.text-center
+							h3.headers--no-margin.text--700.mt-3.mt-md-4.mb-2.px-2 Email
+							p.text--no-margin.text--400.px-3.px-sm-5.px-md-3 contact@dichvucontents.com
+
+			.row.mt-5.mt-md-0
+				.col-12.col-lg-7
+					h3.text--600 Điền thông tin tại đây
+					p.text--no-margin Quý khách vui lòng điền thông tin vào mẫu bên dưới và gửi những góp ý, thắc mắc cho Dịch vụ Content, chúng tôi sẽ phản hồi email của Quý khách trong thời gian sớm nhất.
+				.col-12
+					.row.mt-lg-4
+						.col-12.col-lg-7
+							form(action="javascript:void(0)").contact-form.mt-4.mt-lg-0
+								.row
+									.col-12.col-md-6
+										input(type="text" placeholder="Họ và tên...").form-control
+									.col-12.col-md-6
+										input(type="email" placeholder="Email...").form-control.mt-4.mt-md-0
+								.row
+									.col-12.col-md-6
+										input(type="text" placeholder="Tiêu đề...").form-control.mt-4
+									.col-12.col-md-6
+										input(type="tel" placeholder="Số điện thoại...").form-control.mt-4
+								.row
+									.col-12
+										textarea(name="" cols="30" rows="10" placeholder="Nội dung...").form-control.mt-4
+								.row
+									.col-12
+										button(type="submit").mt-4
+											|Gửi
+											span
+												i.fa.fa-angle-right
+						.col-12.col-lg-5
+							iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3930323794157!2d106.66277561458834!3d10.781179662054532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f04da1cafdf%3A0x5e04042341053804!2zQ8O0bmcgVHkgVEhISCBE4buLY2ggVuG7pSBDb250ZW50!5e0!3m2!1sen!2s!4v1538319795761" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen).mt-4.mt-lg-0
