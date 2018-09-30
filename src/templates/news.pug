@@ -1,0 +1,142 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	// -------------------------BANNER-------------------------
+	section.home-banner
+		.owl-carousel.owl-theme#homeBanner
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center
+				.banner-item-content
+					h1.headers--no-margin.mb-sm-2.text--300 Dịch vụ Content
+					p.text--200.text--no-margin.motion-blur Viết hay thay lời nói của bạn
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center.banner-2
+				.banner-item-content.container
+					.row
+						.col-sm-5.col-md-5
+							p.text--200.text--no-margin 
+								|Bạn cần một bài viết chuẩn
+								br.responsive-break
+								strong.text--700  SEO
+								|, chúng tôi sẽ đáp ứng 
+								br.responsive-break
+								| hơn cả sự mong đợi
+			.banner-item.flex.flex--align-center.flex--justify-center.background--center.banner-3
+				.banner-item-content.container
+					.row
+						.col-sm-5.col-md-5
+							p.text--200.text--no-margin
+								|Tối ưu 
+								strong.text--700 doanh thu
+								|, thu hút 
+								br.responsive-break
+								| người đọc cùng Dịch vụ 
+								br.responsive-break
+								| content
+
+	// -------------------------NEWS-------------------------
+	section.news.flex.flex--justify-center
+		.container
+			.row
+				.col
+					h2.headers--no-margin.text--700.text-center Tin tức
+			// ------------------TOP-NEWS----------------------
+			.row.mt-md-5
+				.col-12.col-md-6
+					.top-news-main.mb-5.mt-5.mb-md-0.mt-md-0
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/04_news/news_grid_1_img.png", alt="").img-fluid
+								figcaption.mt-3
+									time 08/06/2018
+									h3.headers--no-margin.text--700.text-uppercase 6 phương pháp soạn content marketing cho người không giỏi viết
+				.col-12.col-md-6
+					.top-news-side
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/04_news/news_grid_2_img.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0.pl-md-3
+									time.mt-2.mt-md-0 08/06/2018
+									h3.headers--no-margin.text--700.mt-md-2 15 Bí Kíp Để Viết Content Hiệu Quả
+						a(href="javascript:void(0)")
+							figure.figure--no-margin.mt-5.mt-md-0
+								img(src="./img/04_news/news_grid_3_img.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0.pl-md-3
+									time.mt-2.mt-md-0 08/06/2018
+									h3.headers--no-margin.text--700.mt-md-2 Dự báo 3 xu hướng Content Marketing năm 2018
+						a(href="javascript:void(0)")
+							figure.figure--no-margin.mt-5.mt-md-0
+								img(src="./img/04_news/news_grid_4_img.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0.pl-md-3
+									time.mt-2.mt-md-0 08/06/2018
+									h3.headers--no-margin.text--700.mt-md-2 Đột phá trong năm 2018 với 9 xu hướng Content Marketing được mong đợi nhất
+
+			// ------------------LATEST-NEWS----------------------
+			.row.mt-5
+				.col-12.col-md-4
+					.latest-news-item
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/01_home/home_news_1.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0
+									time.mt-2.mt-md-3 13/08/2018
+									h3.mt-md-3.text--700.text--no-margin Vai trò của thiết kế trong Content Marketing và những điều Marketer cần biết.
+				.col-12.col-md-4
+					.latest-news-item.mt-5.mt-md-0
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/01_home/home_news_2.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0
+									time.mt-2.mt-md-3 13/08/2018
+									h3.mt-md-3.text--700.text--no-margin 5 loại sản phẩm chính mà sản phẩm nào cũng phải có.
+				.col-12.col-md-4
+					.latest-news-item.mt-5.mt-md-0
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/01_home/home_news_3.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0
+									time.mt-2.mt-md-3 13/08/2018
+									h3.mt-md-3.text--700.text--no-margin 7 công thức tạo ra sát thủ
+			.row.mt-5
+				.col-12.col-md-4
+					.latest-news-item
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/01_home/home_news_1.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0
+									time.mt-2.mt-md-3 13/08/2018
+									h3.mt-md-3.text--700.text--no-margin Vai trò của thiết kế trong Content Marketing và những điều Marketer cần biết.
+				.col-12.col-md-4
+					.latest-news-item.mt-5.mt-md-0
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/01_home/home_news_2.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0
+									time.mt-2.mt-md-3 13/08/2018
+									h3.mt-md-3.text--700.text--no-margin 5 loại sản phẩm chính mà sản phẩm nào cũng phải có.
+				.col-12.col-md-4
+					.latest-news-item.mt-5.mt-md-0
+						a(href="javascript:void(0)")
+							figure.figure--no-margin
+								img(src="./img/01_home/home_news_3.png", alt="").img-fluid
+								figcaption.pr-3.pr-md-0
+									time.mt-2.mt-md-3 13/08/2018
+									h3.mt-md-3.text--700.text--no-margin 7 công thức tạo ra sát thủ
+
+			// ------------------PAGINATION----------------------
+			.row.mt-5
+				.col
+					.pagination
+						ul.list-inline.list--no-margin
+							li.list-inline-item
+								a.btn(href="javascript:void(0)") 1
+							li.list-inline-item
+								a.btn(href="javascript:void(0)") 2
+							li.list-inline-item
+								a.btn(href="javascript:void(0)") 3
+							li.list-inline-item
+								a.btn(href="javascript:void(0)")
+									i.fa.fa-angle-right
